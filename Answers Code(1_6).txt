@@ -1,0 +1,102 @@
+#1##############################
+### GRADED
+### YOUR ANSWER BELOW
+
+### YOUR SOLUTION HERE
+def validate(x):
+    if x % 2 == 0:
+        return 'even'
+    elif x % 2 == 1:
+        return 'odd'
+    
+validate(0)
+
+#2##############################
+### GRADED
+### YOUR ANSWER BELOW
+
+### YOUR SOLUTION HERE
+def abs_value(x):
+    return abs(x)
+    
+abs_value(-10.22)
+
+#3##############################
+### GRADED
+
+### YOUR SOLUTION HERE
+def square_cond(x):
+    if x%2 == 0:
+        return x*x
+    else:
+        return 'Odd number'
+    
+square_cond(3)
+
+#4##############################
+### GRADED
+
+### YOUR SOLUTION HERE
+def multi_operation(a, b):
+    multi = a*b
+    div = a//b
+    return multi, div
+
+d,e = multi_operation(100, 10)
+print(d)
+print(e)
+
+#5##############################
+### GRADED
+### YOUR SOLUTION HERE
+number = None
+def global_sum(a, b):
+    global number
+    number = a+b
+    
+print(number)    
+global_sum(4, 3)
+print(number)
+global_sum(5, 1)
+print(number)
+
+
+#6##############################
+### GRADED
+
+### YOUR SOLUTION HERE
+# Definition of x
+x = 10.0
+
+def i_print(x):
+    return int(x)
+
+i_print(-10.0)
+
+
+#7##############################
+### GRADED
+### YOUR SOLUTION HERE
+a = 10
+
+def h():     
+    global a 
+    a = 3
+    return a
+
+ans7 = h()
+ans7
+
+#8##############################
+### GRADED
+
+### YOUR SOLUTION HERE
+def exce_sum(a, b):
+    try:
+        if a == 0 and b == 0:
+            raise ValueError('Invalid numbers')
+        return a + b
+    except ValueError as err:
+        return str(err)
+    
+exce_sum(-1, 1)

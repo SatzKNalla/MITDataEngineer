@@ -1,0 +1,149 @@
+#1#####################
+### GRADED
+
+num1a = -738.9
+num1b = 11
+ans1 = []
+
+if num1a < 0:
+    ans1.append(True)
+
+if num1b > 0:
+    ans1.append(False)
+    
+ans1
+
+#2#####################
+### GRADED
+
+str1 = "This is the 1st week of the course"
+ans2 = []
+
+if str1.isalpha():
+    ans2.append(True)
+    
+ans2
+
+#3#####################
+### GRADED
+
+num3 = 34.67
+ans3 = []
+
+if num3 >= 0:
+    ans3.append(True)
+else:
+    ans3.append(False)
+
+ans3
+
+#4#####################
+### GRADED
+name = "Alexander"
+ans4a = None
+ans4b = None
+ans4c = None
+
+if name[0] == 'A':
+    ans4a = True
+    
+if name[-1] == 'b':
+    ans4b = True
+    
+if not(ans4a and ans4b):
+    ans4c = 'Conditions not satisfied'
+
+print(ans4a)
+print(ans4b)
+print(ans4c)
+
+#5#####################
+### GRADED
+
+fruits = ['apple', 'lime', 'orange', 'watermelon', 'apricot', 'peach']
+fruits_list = []
+
+for fruit in fruits:
+    fruits_list.append(fruit)
+
+print(fruits)
+print(fruits_list)
+
+#6#####################
+### GRADED
+### YOUR ANSWER BELOW
+
+fruits = ['apple', 'lime', 'orange', 'watermelon', 'apricot', 'peach']
+new_fruits = []
+
+new_fruits = [fruit for index, fruit in enumerate(fruits) if index <= 3]
+
+print(fruits)
+print(new_fruits)
+
+#7#####################
+### GRADED
+### YOUR ANSWER BELOW
+
+time = list(range(7,25))
+result_time = []
+result_dict = {}
+print(time)
+for t in time:
+    if t <= 12:
+        result_time.append('Good morning')
+        result_dict[t] = 'Good morning'
+    elif t > 12 and t < 20:
+        result_time.append('Good afternoon')
+        result_dict[t] = 'Good afternoon'
+    else:
+        result_time.append('Good night')
+        result_dict[t] = 'Good night'
+
+print(result_time)
+print(result_dict)
+
+#8#####################
+### GRADED
+### YOUR ANSWER BELOW
+list8 = list(range(1,15,1))
+print(list8)
+ans8 = []
+print(ans8)
+ans8 = [True if value%2 == 0 else False for value in list8]
+print(ans8)
+
+ans8
+
+#9#####################
+### GRADED
+
+### YOUR SOLUTION HERE
+i = 1
+list9 = []
+
+while i:
+    if i < 6:
+        list9.append(i)
+    else:
+        ans9 = 'i is no longer less than 6'
+        temp = f"breaking the loop at index: {i}"
+        break
+    i = i + 1
+     
+print(list9)
+print(ans9)
+print(temp)
+
+#10####################
+### GRADED
+### YOUR SOLUTION HERE
+i = 1
+list10 = []
+
+while i < 2:
+    list10.append(i)
+    i = i + 1
+     
+print(list10)
+print(temp)

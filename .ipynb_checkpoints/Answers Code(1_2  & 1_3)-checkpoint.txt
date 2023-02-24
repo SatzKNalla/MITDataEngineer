@@ -1,0 +1,293 @@
+Graded 1.2
+#1
+### GRADED
+
+### YOUR SOLUTION HERE
+ans1a = ['Data', 'Analyst', 'Python', 3.14]
+ans1b = 'yes'
+
+print(ans1a)
+
+#2
+### GRADED
+### YOUR SOLUTION HERE
+ans2a = [False, 'Apple', 1, 3.14]
+ans2a[0]=True
+ans2b = ans2a
+
+print(ans2a)
+print(ans2b)
+
+#3
+### GRADED
+
+### YOUR SOLUTION HERE
+ans3a = [False, 'Apple', 1, 3.14]
+ans3a.append('pop')
+ans3b = ans3a
+
+print(ans3a)
+print(ans3b)
+
+
+#4
+### GRADED
+
+### YOUR SOLUTION HERE
+ans4a = [False, 'Apple', 2, 2.14]
+ans4a.pop(1)
+ans4b = ans4a
+print(ans4b)
+
+
+#5
+### GRADED
+
+### YOUR SOLUTION HERE
+ans5 = list(('Python', 'list', 'container', 11))
+
+print(type(ans5))
+print(ans5)
+
+#6
+### GRADED
+
+### YOUR SOLUTION HERE
+ans6a = list(('Python', 'list', 'container',11))
+ans6b = len(ans6a)
+
+print(ans6a)
+print(ans6b)
+
+#7
+### GRADED
+
+### YOUR SOLUTION HERE
+ans7a = tuple(('Hello', 'world', 'Python', 'Assignment'))
+ans7b = len(ans7a)
+
+print(ans7a)
+print(ans7b)
+
+#8
+### GRADED
+
+### YOUR SOLUTION HERE
+
+stuple = tuple(('Hello', 'world', 'Python', 'Assignment'))
+
+ans8 = 'yes'
+
+
+#9
+### GRADED
+
+### YOUR SOLUTION HERE
+ans9 = tuple(('Python', 'list', 'tuple', 14.67))
+print(ans9)
+
+#10
+### GRADED
+### YOUR SOLUTION HERE
+x = tuple(('Python', 'list', 'tuple', [4,5,6]))
+typex = type(x)
+ans10 = 'yes'
+
+print(x)
+print(typex)
+print(ans10)
+
+#11
+### GRADED
+
+### YOUR SOLUTION HERE
+ans11a = {1, 2, 3, 4}
+ans11b = len(ans11a)
+
+print(ans11a)
+print(ans11b)
+
+
+#12
+### GRADED
+
+### YOUR SOLUTION HERE
+ans12 = set(('Python', 'list', 'tuple', 14.67))
+
+print(ans12)
+print(type(ans12))
+
+#13
+### GRADED
+
+### YOUR SOLUTION HERE
+ans13a = set((False, 'Apple', 2, 2.14))
+print(ans13a)
+ans13a.remove('Apple')
+print(ans13a)
+ans13b = ans13a
+print(ans13b)
+
+#14
+### GRADED
+
+### YOUR SOLUTION HERE
+ans14a = set((True, 'Peach', 3.14))
+print(ans14a)
+ans14a.add('Tree')
+print(ans14a)
+ans14b = ans14a
+print(ans14b)
+
+
+
+
+
+Graded 1.3
+#1
+### GRADED
+
+### YOUR SOLUTION HERE
+ans1a = {
+            'Name' : 'Matthew'
+            ,'Last Name' : 'Smith'
+            ,'University' : 'MIT'
+        }
+
+print(ans1a)
+
+#2
+print(ans1a)
+ans1a['Name']= 'Favio'
+print(ans1a)
+
+#3
+### GRADED
+
+### YOUR SOLUTION HERE
+ans1a = {
+            'Name' : 'Matthew'
+            ,'Last Name' : 'Smith'
+            ,'University' : 'MIT'
+        }
+print(ans1a)
+ans1a['First Name'] = ans1a.pop('Name')
+print(ans1a)
+ans3 = ans1a
+print(ans3)
+
+#4
+### GRADED
+
+### YOUR SOLUTION HERE
+ans4 = {
+        'StudentID':123456, 
+        'Grade':75, 
+        'Late':False
+        }
+print(ans4)
+
+ans4['Updated Average']=79
+print(ans4)
+
+#5
+### GRADED
+
+### YOUR SOLUTION HERE
+print(ans4)
+del ans4['Late']
+print(ans4)
+ans5 = ans4
+
+print(ans5)
+
+#6
+### GRADED
+
+### YOUR SOLUTION HERE
+print(ans5)
+ans6 = ans5
+
+print(ans6)
+
+#7
+### GRADED
+### YOUR SOLUTION HERE
+ans7 = {
+        'Flower 1':{'Name':'Tulip','Sepal length':2.7}
+        ,'Flower 2':{'Name':'Lily','Sepal length':3.2}
+       }
+
+print(ans7)
+
+#8
+### GRADED
+
+### YOUR SOLUTION HERE
+ans8a = {
+            'Name':'Rose'
+            ,'Perennial':True
+            ,'Sepal width':1.7
+        }
+print(ans8a)
+ans8b = ans8a.clear()
+print(ans8b)
+
+#9
+### GRADED
+
+### YOUR SOLUTION HERE
+ans9a = {
+            'Name':'Geranium'
+            ,'Perennial':False
+            ,'Sepal width':0.5
+        }
+print(ans9a)
+ans9b = ans9a['Name']
+print(ans9b)
+
+
+#10
+### GRADED
+
+### YOUR SOLUTION HERE
+ans10a = {
+            'Name':'Apricot Tree'
+            ,'Perennial':True
+            ,'Height':8
+        }
+print(ans10a)
+
+ans10b = ans10a.keys()
+print(ans10b)
+ans10c = str(type(ans10b))
+print(ans10c)
+
+#11
+### GRADED
+
+### YOUR SOLUTION HERE
+ans11a = {
+            1:'one'
+            ,2:'three'
+        }
+print(ans11a)
+ans11b = {2:'two'}
+print(ans11b)
+ans11a.update(ans11b)
+print(ans11a)
+
+#12
+### GRADED
+
+### YOUR SOLUTION HERE
+ans12a = {1: 'one', 2: 'two'}
+print(ans12a)
+ans12b = ans12a
+print(ans12b)
+ans12b = ans12a.values()
+print(ans12b)
+
+
+
+

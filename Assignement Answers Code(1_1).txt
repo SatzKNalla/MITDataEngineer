@@ -1,0 +1,288 @@
+Test cell (Score: 0.0 / 3.0)
+Test cell (Score: 3.0 / 3.0)
+Test cell (Score: 2.0 / 2.0)
+Test cell (Score: 2.0 / 2.0)
+Test cell (Score: 4.0 / 4.0)
+Test cell (Score: 0.0 / 5.0)
+Test cell (Score: 4.0 / 4.0)
+Test cell (Score: 7.0 / 7.0)
+Test cell (Score: 4.0 / 4.0)
+Test cell (Score: 6.0 / 6.0)
+Test cell (Score: 7.0 / 7.0)
+Test cell (Score: 7.0 / 7.0)
+Test cell (Score: 7.0 / 7.0)
+Test cell (Score: 8.0 / 8.0)
+Test cell (Score: 5.0 / 5.0)
+Test cell (Score: 5.0 / 5.0)
+Test cell (Score: 0.0 / 8.0)
+Test cell (Score: 5.0 / 5.0)
+Test cell (Score: 5.0 / 5.0)
+Test cell (Score: 3.0 / 3.0)
+
+#01################################# GRADED
+### GRADED
+
+### YOUR SOLUTION HERE
+ans1a = "My name is"
+ans1b = " Alex"
+ans1c = ans1a + ans1b
+ans1d = ans1c.replace("Alex","Mary")
+
+print(ans1c)
+print(ans1d)
+
+
+#02##############################
+import math
+### GRADED
+
+### YOUR SOLUTION HERE
+ans2a = 24 * 13
+print(ans2a)
+ans2b = math.sqrt(ans2a)
+print(ans2b)
+ans2c = int(ans2b)
+print(ans2c)
+
+
+#03##############################
+### GRADED
+
+### YOUR SOLUTION HERE
+ans3a = '1000'
+if ans3a.isnumeric():
+    ans3a = int(ans3a)
+
+print(ans3a)
+print(type(ans3a))
+
+
+#04##############################
+### GRADED
+
+### YOUR SOLUTION HERE
+ans4a = type([])
+print(ans4a)
+
+#05##############################
+### GRADED
+
+### YOUR SOLUTION HERE
+ans5b = ""
+ans5a = 'xylophone'
+ans5b = ans5a.find('y')
+
+print(ans5b)
+
+#06##############################
+### GRADED
+
+### YOUR SOLUTION HERE
+ans6a = [1,2,3]
+print(ans6a)
+
+ans6a.append([4])
+ans6b = ans6a
+print(ans6b)
+ans6b.extend([5,6,7])
+print(ans6b)
+ans6c = ans6b
+
+print(ans6a)
+print(ans6b)
+print(ans6c)
+
+ans6a_ = [1,2,3]
+ans6a_.append([4])
+ans6b_ = ans6a_
+ans6b_.extend([5,6,7])
+ans6c_ = ans6b_
+#07##############################
+### GRADED
+
+### YOUR SOLUTION HERE
+ans7a = (7, 8, 9, 1, 10, 7)
+print(ans7a)
+print(type(ans7a))
+
+ans7b = sum(ans7a)
+
+print(ans7b)
+
+#08##############################
+### GRADED
+
+### YOUR SOLUTION HERE
+ans8a = (4, 5)
+ans8b = (7, 8)
+ans8c = None
+ans8c =  [(i, j) for i in ans8a for j in ans8b]
+ans8c = ans8c +  [(i, j) for i in ans8b for j in ans8a]
+
+print(ans8c) 
+
+
+#09##############################
+### GRADED
+
+### YOUR SOLUTION HERE
+ans9a = { i : i*i for i in range(1, 7+1) }
+print(ans9a)
+
+#10##############################
+### GRADED
+my_dict = {'data1':100,'data2':-54,'data3':247}
+ans10a = 1
+
+for keys, items in my_dict.items():
+    ans10a = ans10a * items
+    
+print(ans10a)
+
+#11##############################
+### GRADED
+my_dict = {'n1': [2, 3, 1], 'n2': [5, 1, 2], 'n3': [3, 2, 4]}
+
+### YOUR SOLUTION HERE
+ans11a = {}
+
+for key, value in my_dict.items():
+    ans11a[key] = sorted(value)
+
+print(ans11a)
+
+#12##############################
+### GRADED
+list1 = ["To",  "i", "su"]
+list2 = ["day", "s", "nny"]
+
+
+### YOUR SOLUTION HERE
+ans12a =[i1+i2 for i1, i2 in zip(list1, list2)]
+print(ans12a)
+
+#13##############################
+### GRADED
+list1 = [12, 15, 32, 42, 51, 55, 75, 82, 85, 88, 132]
+
+list1 = sorted(list1)
+print(list1)
+ans13a = []
+
+for i in list1:
+    if i%5 == 0:
+        ans13a.append(i)
+    
+    if i > 87:
+        break
+        
+print(ans13a)
+    
+
+#14##############################
+### GRADED
+
+### YOUR SOLUTION HERE
+def compute_factorial(x):
+    fact = 1
+    if x < 0:
+        return 'Factorial does not exist for negative numbers.'
+    elif x == 0:
+        return 'The factorial of 0 is 1.'
+    elif x > 0:
+        for i in range(x,0,-1):
+            fact = fact * i
+        return fact
+		
+compute_factorial(5)
+#15##############################
+### GRADED
+my_dict = {1: {'nme': 'John', 'age': '27', 'sex': 'Male'},
+           2: {'nme': 'Mary', 'age': '22', 'sex': 'Female'}}
+
+### YOUR SOLUTION HERE
+
+for key, dict in my_dict.items():
+    print(dict)
+    my_dict[key]['name'] = my_dict[key].pop('nme')
+    print(my_dict[key])
+
+print(my_dict)
+    
+    
+#16##############################
+### GRADED
+
+### YOUR SOLUTION HERE
+def factors(num):
+    factorslist = []
+    factorslist = [i for i in range(1, num+1) if num % i == 0]
+       
+    return factorslist
+
+factors(100)
+
+
+#17##############################
+import math
+
+### YOUR SOLUTION HERE
+def check_prime(num):
+    if num <= 1:
+        return False
+    else:
+        primeFlag = True
+        for i in range(2,num):
+            if num % i == 0:
+                primeFlag = False
+                break
+        return primeFlag
+
+
+
+#18##############################
+### GRADED
+
+### YOUR SOLUTION HERE
+def dictionary_builder(list_of_lists, col_names):
+    outDict = {}
+    outDict = {i1:i2 for i1, i2 in zip(col_names, list_of_lists)}
+    return outDict
+
+### Code to verify your answer
+sample_names = ['col_1', 'col_2', 'col_3',]
+sample_lst = [
+    [ 0,  1,  2,  3,  4],
+    [ 5,  6,  7,  8,  9],
+    [10, 11, 12, 13, 14],
+]
+result = {
+    'col_1': [0, 1, 2, 3, 4],
+    'col_2': [5, 6, 7, 8, 9],
+    'col_3': [10, 11, 12, 13, 14]
+}
+print("Your result:\t\t{}".format(dictionary_builder(sample_lst, sample_names)))
+print("Expected result:\t{}".format(result))
+
+#19##############################
+### GRADED
+
+### YOUR SOLUTION HERE
+def exce_sub(a, b):
+    if a == 1 and b == 1:
+        raise ValueError('Invalid numbers')
+    else:
+        return a - b
+
+
+#20##############################
+### GRADED
+
+### YOUR SOLUTION HERE
+def global_multiplication(a, b):
+    global number 
+    number = a * b
+    return number
+
+global_multiplication(5, 12)
+print(number)
